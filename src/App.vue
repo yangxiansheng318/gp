@@ -16,6 +16,51 @@
       <div class="banner">
         <img class="banner__img" src="http://www.dell-lee.com/imgs/vue3/banner.jpg" alt="">
       </div>
+      <!-- 图标列表区域 -->
+      <div class="icons">
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+        <div class="icons__item">
+          <img class="icons__item__img" src="http://www.dell-lee.com/imgs/vue3/超市.png" alt="">
+          <p class="icons__item__desc">超市便利</p>
+        </div>
+      </div>
+      <div class="gap">
+      </div>
     </div>
     <!-- 底部导航栏区域 -->
     <div class="docker">
@@ -69,7 +114,6 @@
     font-size: .2rem;
   }
 }
-
 .search {
   position: relative;
   width: 100%;
@@ -93,7 +137,6 @@
     color: #666;
   }
 }
-
 .banner {
   height: 0;
   overflow: hidden;
@@ -102,7 +145,30 @@
     width: 100%;
   }
 }
-
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .16rem;
+  &__item {
+    width: 20%;
+    &__img {
+      display: block;
+      width: .4rem;
+      height: .4rem;
+      margin: 0 auto;
+    }
+    &__desc {
+      text-align: center;
+      margin: .06rem 0 .16rem 0;
+      color: $content-fontcolor;
+    }
+  }
+}
+.gap {
+  height: .1rem;
+  background: $content-bgColor;
+  margin: 0 -.18rem;
+}
 .docker {
   display: flex;
   position: absolute;
@@ -112,7 +178,7 @@
   bottom: 0;
   width: 100%;
   height: 0.49rem;
-  border-top: .01rem solid #F1F1F1;
+  border-top: .01rem solid $content-bgColor;
   color: $content-fontcolor;
   &__item {
     flex: 1;
