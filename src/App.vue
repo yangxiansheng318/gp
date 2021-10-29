@@ -1,12 +1,23 @@
 <template>
   <div>
     <div class="wrapper">
+      <!-- 地址区域 -->
       <div class="position">
         <span class="iconfont position__icon">&#xe619;</span>
         北京理工大学国防科技园2号楼10层
         <span class="iconfont position__notice">&#xe601;</span>
       </div>
+      <!-- 搜索框 -->
+      <div class="search">
+        <span class="iconfont">&#xe65c;</span>
+        <input class="search__input" type="text" placeholder="请输入要搜索的商品"/>
+      </div>
+      <!-- banner -->
+      <div class="banner">
+        <img class="banner__img" src="http://www.dell-lee.com/imgs/vue3/banner.jpg" alt="">
+      </div>
     </div>
+    <!-- 底部导航栏区域 -->
     <div class="docker">
       <div class="docker__item docker__item--active">
         <div class="iconfont">&#xe600;</div>
@@ -38,7 +49,6 @@
   bottom: .5rem;
   right: 0;
   padding: 0 .18rem;
-  background: skyblue;
 }
 .position {
   position: relative;
@@ -59,6 +69,40 @@
     font-size: .2rem;
   }
 }
+
+.search {
+  position: relative;
+  width: 100%;
+  margin-bottom: .12rem;
+  .iconfont {
+    display: inline-block;
+    position: absolute;
+    top: .06rem;
+    font-size: .18rem;
+    padding: 0 .08rem 0 .16rem;
+  }
+  &__input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    background: #F5F5F5;
+    border-radius: .16rem;
+    line-height: .32rem;
+    font-size: .14rem;
+    padding: .01rem .2rem 0 .42rem;
+    color: #666;
+  }
+}
+
+.banner {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 25.4%;
+  &__img {
+    width: 100%;
+  }
+}
+
 .docker {
   display: flex;
   position: absolute;
