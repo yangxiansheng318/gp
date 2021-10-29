@@ -1,0 +1,5 @@
+@mixin ellipsis {
+  overflow: hidden; // 溢出隐藏
+  white-space: nowrap;  // 不换行
+  text-overflow: ellipsis; // 溢出用 ... 代替
+}
